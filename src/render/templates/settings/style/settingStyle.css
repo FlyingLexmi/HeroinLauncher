@@ -1,0 +1,142 @@
+html, body{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 1280px;
+    background-color: rgba(255, 255, 255, 0.838);
+    border: none;
+    height: 720px;
+}
+header{
+    max-width: 1280px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.settings-form{
+    width: 400px;
+    margin: auto;
+    height: 500px;
+    background-color: rgb(232, 229, 229);
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px gray;
+}
+
+
+.minecraft-resolution{
+    width: 400px;
+    display: flex;
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.minecraft-resolution span{
+    margin-top: 20px;
+}
+
+
+
+
+.minecraft-resolution input{
+    width: 60px;
+}
+
+
+
+
+.values{
+    display: flex;
+    margin-top: -20px;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+
+
+.ram{
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.skin-change{
+    width: 400px;
+    margin-top: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.skin-file input{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.button{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px 0 0 0 ;
+}
+
+.button #save{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(45deg, #97D9E1, #D9AFD9);
+    color: white;
+}
+
+.button #save:active{
+    width: 190px;
+    height: 44px;
+    font-size: 20px;
+    border: none;
+    transition: .4s;
+    background: linear-gradient(45deg, #D9AFD9, #97D9E1);
+    color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#exit{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#exit:hover{
+    color: grey;
+    transition: .4s;
+    letter-spacing: 1px;
+    font-size: 22px;
+}

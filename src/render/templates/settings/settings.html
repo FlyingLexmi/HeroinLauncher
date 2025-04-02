@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/settingStyle.css">
+    <link rel="stylesheet" href="../../style/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            settings
+        </header>
+
+        <div class="settings-form">
+            <div class="minecraft-resolution">
+                <h3>resolution -></h3>
+                <div class="values">
+                    <span>width: <input type="text" placeholder="1920px" id="width"> </span>
+                    <span>height: <input type="text" placeholder="1080px" id="height"></span>
+                </div>
+            </div>
+            <div class="ram">
+            
+                ram: 4gb
+                <br> <!--ram counter--> <div class="ram-val">4gb <input type="range" min="4" max="16" title="a half of you total ram" id="ram"> 8gb</div> 
+            </div>
+            <div class="skin-change">
+                skin: 
+                <div class="skin-file">
+                    <input type="file" id="skinFile">
+                </div>
+            </div>
+
+            <div class="button">
+                <button id="save">SAVE</button>
+                <button id="exit">close</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="../../script/settings.js"></script>
+</body>
+</html>

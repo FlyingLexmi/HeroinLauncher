@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const { minecraftLauncher } = require("./src/module/minecraftLauncher");
+const { writeDataToFile } = require("./src/module/saveUserSettings");
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -21,7 +22,12 @@ app.whenReady()
     .then(createWindow)
     .catch(err => console.error("Ошибка при инициализации приложения:", err));
 
-ipcMain.on('button-clicked', (event, username, version) => {  // ✅ Теперь принимаем username и version
+ipcMain.on('button-clicked', (event, username, version) => {  
     console.log(`Запуск Minecraft с ником ${username} и версией ${version}`);
-    minecraftLauncher(username, version);  // ✅ Передаем параметры в лаунчер
 });
+
+ipcMain.on('userSave', (event, width, height, ram) => {  
+    console.log(`Запуск json`);
+    writeDataToFile('userSettings.json', width, height, ram);  
+});
+

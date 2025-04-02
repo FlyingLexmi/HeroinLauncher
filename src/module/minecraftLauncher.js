@@ -5,8 +5,7 @@ async function minecraftLauncher(username, version) {
     const launcher = new Client();
 
     const options = {
-        authorization: {
-            name: username || "Player", // ✅ Подставляем имя по умолчанию
+        authorization: {// ✅ Подставляем имя по умолчанию
             uuid: "12345678-1234-5678-1234-567812345678", 
             access_token: "offline" 
         },

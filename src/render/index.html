@@ -20,7 +20,7 @@
                 <button>github</button>
                 <button>youtube</button>
                 <button>bot</button>
-                <button>settings</button>
+                <button id="settings">settings</button>
 
             </span>
         </header>
@@ -67,12 +67,13 @@
 
 
 
-    <div class="iframes">
-        <iframe src="templates/theme/settings.html" ></iframe>
+    <div style="display: none;" id="settings-iframe">
+        <iframe  src="templates/settings/settings.html" ></iframe>
     </div>
 
 
 
     <script src="script/render.js"></script>
+    <script src="script/settings.js"></script>
 </body>
 </html>
